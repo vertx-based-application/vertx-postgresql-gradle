@@ -1,0 +1,15 @@
+version: '3.2'
+
+services:
+
+  # Launch PostgreSQL Database.
+  postgresDB:
+    image: postgres:11-alpine
+    restart: always
+    ports:
+        - "5432:5432"
+    environment:
+      TZ: "Europe/Madrid"
+      POSTGRES_DB: "vertx-postgresql-gradle-db"
+      POSTGRES_USER: "developer"
+      POSTGRES_PASSWORD: "123"
