@@ -1,3 +1,8 @@
 ### Get all data
-GET http://localhost:8181/temperature/all
+GET http://localhost:8181/temperature
+Content-Type: application/json
+
+
+### Get all data
+GET http://localhost:8080/temperature
 Content-Type: application/json

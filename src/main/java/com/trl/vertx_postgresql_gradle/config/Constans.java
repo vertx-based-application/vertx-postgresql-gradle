@@ -4,7 +4,7 @@ public final class Constans {
 
   public static final class Endpoints {
 
-    public static final String TEMPERATURE_ALL = "/temperature/all";
+    public static final String TEMPERATURE_ALL = "/temperature";
 
     private Endpoints() {
     }
