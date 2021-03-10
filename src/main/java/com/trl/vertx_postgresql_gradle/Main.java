@@ -14,9 +14,10 @@ public class Main {
     Vertx.clusteredVertx(new VertxOptions())
       .onSuccess(vertx -> {
         vertx.deployVerticle(new TemperatureSensorVerticle());
+        LOG.debug("Running");
       })
       .onFailure(failure -> {
-        LOG.error("Woops", failure);
+        LOG.error("No running", failure);
       });
 
   }
